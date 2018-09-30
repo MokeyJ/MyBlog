@@ -4,7 +4,7 @@ http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器
 
 > meat标签的http-equiv属性语法格式是：＜meta http-equiv="参数" content="参数变量值"＞ ；其中http-equiv属性主要有以下几种参数：
 
-** 1、Expires(期限) **
+**1、Expires(期限)**
 
 说明：可以用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。 
 
@@ -14,7 +14,7 @@ http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器
 ```
 注意：必须使用GMT的时间格式。 
 
-** 2、Pragma(cache模式)  **
+**2、Pragma(cache模式)**
 
 说明：是用于设定禁止浏览器从本地机的缓存中调阅页面内容，设定后一旦离开网页就无法从Cache中再调出 
 
@@ -25,7 +25,7 @@ http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器
 注意：这样设定，访问者将无法脱机浏览。 
 
 
-** 3、Refresh(刷新) **
+**3、Refresh(刷新)**
 
 说明：自动刷新并指向新页面。 
 
@@ -35,7 +35,7 @@ http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器
 ```
 注意：其中的2是指停留2秒钟后自动刷新到URL网址。 
 
-** 4、Set-Cookie(cookie设定)  **
+**4、Set-Cookie(cookie设定)**
 
 说明：如果网页过期，那么存盘的cookie将被删除。 
 
@@ -45,7 +45,7 @@ http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器
 ```
 注意：必须使用GMT的时间格式。 
 
-** 5、Window-target(显示窗口的设定)  **
+**5、Window-target(显示窗口的设定)**
 
 说明：强制页面在当前窗口以独立页面显示。 
 
@@ -55,7 +55,7 @@ http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器
 ```
 注意：用来防止别人在框架里调用自己的页面。 
 
-** 6、content-Type(显示字符集的设定)  **
+**6、content-Type(显示字符集的设定)**
 
 说明：设定页面使用的字符集。 
 
@@ -65,7 +65,7 @@ http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器
 ```
 注意：其中的2是指停留2秒钟后自动刷新到URL网址。 
 
-** 7、Pics-label(网页等级评定)  **
+**7、Pics-label(网页等级评定)**
 
 用法：
 ```html
@@ -73,7 +73,7 @@ http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器
 ```
 说明：在IE的internet选项中有一项内容设置，可以防止浏览一些受限制的网站，而网站的限制级别就是通过meta属性来设置的。
 
-** 8、Page_Enter、Page_Exit  **
+**8、Page_Enter、Page_Exit**
 
 设定进入页面时的特殊效果
 
@@ -102,25 +102,25 @@ Transition是过渡方式，它的值为0到23，分别对应24种过渡方式�
 |20  |  从左下角向右上角展开  |  21  |  水平线状展开  
 |22   | 垂直线状展开  |  23  |  随机产生一种过渡方式  
 
-** 9、清除缓存（再访问这个网站要重新下载！）   **
+**9、清除缓存（再访问这个网站要重新下载！）**
 
 ```html
 <meta http-equiv="cache-control" content="no-cache">  
 ```
 
-** 10、设定网页的到期时间   **
+**10、设定网页的到期时间**
 
 ```html
 <meta http-equiv="expires" content="0">   
 ```
 
-** 11、关键字,给搜索引擎用的  **
+**11、关键字,给搜索引擎用的**
 
 ```html
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">  
 ```
 
-** 12.页面描述  **
+**12.页面描述**
 
 ```html
 <meta http-equiv="description" content="This is my page">  
