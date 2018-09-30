@@ -8,7 +8,7 @@
 * 如果存在客户端Chrome Frame并启用，那么浏览器访问页面会被Chrome内核渲染（这一点没太大意义，因为你开发的项目不能要求用户在客户端来安装Chrome Frame）；也就是说IE浏览器变身Chrome是可以的，但前提是客户端安装了Chrome Frame；
 * 使用IE内核浏览器来访问，会渲染至该浏览器的最高版本，比如你使用IE9浏览器，那么就算在兼容模式切换至IE7，但仍会渲染成IE9的样子（当然IE7浏览器是不会渲染成IE9的）。
 
-![Chrome Frame]('https://www.csweigou.com/wp-content/uploads/2016/06/234.jpg')
+![Chrome Frame][data:https://www.csweigou.com/wp-content/uploads/2016/06/234.jpg]
 
 比如现在我在客户端装了Chrome Frame，然后我的IE浏览器是IE11，也就是说我服务器端已经设置了X-UA-Compatible属性的值为IE=edge,chrome=1，客户端已经安装并启用Chrome Frame。我现在用IE浏览器打开指定网页。
 
