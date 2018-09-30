@@ -1,4 +1,5 @@
-###  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+# '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">'
 
 搜索出来解释最多的是“强制浏览器的渲染方式，默认使用chrome来渲染，然后再按照IE该浏览器的最新版本来渲染”
 
