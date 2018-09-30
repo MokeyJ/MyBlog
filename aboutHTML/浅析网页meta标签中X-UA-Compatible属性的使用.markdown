@@ -12,11 +12,11 @@
 
 比如现在我在客户端装了Chrome Frame，然后我的IE浏览器是IE11，也就是说我服务器端已经设置了X-UA-Compatible属性的值为IE=edge,chrome=1，客户端已经安装并启用Chrome Frame。我现在用IE浏览器打开指定网页。
 
-![Chrome Frame](https://www.csweigou.com/wp-content/uploads/2016/06/2355235.png）
+![Chrome Frame1](https://www.csweigou.com/wp-content/uploads/2016/06/2355235.png)
 
 在IE浏览器下看到了审查元素，而且点击审查元素出现了在Chrome下几乎一样的控制台。
 
-![Chrome Frame](https://www.csweigou.com/wp-content/uploads/2016/06/233333.jpg）
+![Chrome Frame2](https://www.csweigou.com/wp-content/uploads/2016/06/233333.jpg)
 
 X-UA-Compatible还有各种其他的写法，这里就不再说了，可以按照上面的流程来尝试，然后必然或多或少会有一点自己的理解和收获。
 
