@@ -8,15 +8,15 @@
 * 如果存在客户端Chrome Frame并启用，那么浏览器访问页面会被Chrome内核渲染（这一点没太大意义，因为你开发的项目不能要求用户在客户端来安装Chrome Frame）；也就是说IE浏览器变身Chrome是可以的，但前提是客户端安装了Chrome Frame；
 * 使用IE内核浏览器来访问，会渲染至该浏览器的最高版本，比如你使用IE9浏览器，那么就算在兼容模式切换至IE7，但仍会渲染成IE9的样子（当然IE7浏览器是不会渲染成IE9的）。
 
-![Chrome Frame][data:https://www.csweigou.com/wp-content/uploads/2016/06/234.jpg]
+![Chrome Frame](https://www.csweigou.com/wp-content/uploads/2016/06/234.jpg)
 
 比如现在我在客户端装了Chrome Frame，然后我的IE浏览器是IE11，也就是说我服务器端已经设置了X-UA-Compatible属性的值为IE=edge,chrome=1，客户端已经安装并启用Chrome Frame。我现在用IE浏览器打开指定网页。
 
 
-![审查元素]('https://www.csweigou.com/wp-content/uploads/2016/06/2355235.png'）
+![审查元素](https://www.csweigou.com/wp-content/uploads/2016/06/2355235.png）
 
 在IE浏览器下看到了审查元素，而且点击审查元素出现了在Chrome下几乎一样的控制台。
-![chrome控制台]('https://www.csweigou.com/wp-content/uploads/2016/06/233333.jpg'）
+![chrome控制台](https://www.csweigou.com/wp-content/uploads/2016/06/233333.jpg）
 
 X-UA-Compatible还有各种其他的写法，这里就不再说了，可以按照上面的流程来尝试，然后必然或多或少会有一点自己的理解和收获。
 
