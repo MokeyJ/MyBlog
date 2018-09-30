@@ -16,6 +16,7 @@
 ![审查元素](https://www.csweigou.com/wp-content/uploads/2016/06/2355235.png）
 
 在IE浏览器下看到了审查元素，而且点击审查元素出现了在Chrome下几乎一样的控制台。
+
 ![chrome控制台](https://www.csweigou.com/wp-content/uploads/2016/06/233333.jpg）
 
 X-UA-Compatible还有各种其他的写法，这里就不再说了，可以按照上面的流程来尝试，然后必然或多或少会有一点自己的理解和收获。
