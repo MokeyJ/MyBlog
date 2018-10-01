@@ -44,6 +44,9 @@
 
 若要停止原型链，可以使用采用了 null prototype 参数的函数。  所创建的对象将没有原型。  
 
-
-
+```javascript
+  var obj = {name : 'MonkeyJ'};
+  var o = Object.create(obj);
+  o.__proto__ === obj; //true
+```
 
