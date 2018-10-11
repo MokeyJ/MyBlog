@@ -6,7 +6,7 @@
 
 接下来 我们用代码模拟一下js中new运算符的一个过程
 ```javascript
-  var new2 = function(f,argArr){
+  var newObj = function(f,argArr){
     var obj = Object.create(f.prototype);
     var k = f().apply(obj,argArr);
     if(instanceof k === 'object'){
@@ -49,4 +49,3 @@
   var o = Object.create(obj);
   o.__proto__ === obj; //true
 ```
-
