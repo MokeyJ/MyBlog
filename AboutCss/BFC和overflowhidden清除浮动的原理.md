@@ -1,4 +1,5 @@
 # overflow:hidden清除浮动的原理
+
 我们都知道"overflow:hidden"可以溢出隐藏，即当内容元素的高度大于其包含块的高度时，设置该属性即可把内容区域超出来的部分隐藏，使内容区域完全包含在该包含块中。
 
 然而"overflow:hidden"还有另外一个特殊的用途，那就是清除包含块内子元素的浮动。可是原因是什么呢？在解释这个问题之前，我们先了解一下BFC的概念。
@@ -18,7 +19,7 @@ BFC（Block Formatting Context），块级格式化上下文，它规定了内�
 #### 创建一个BFC
 + 首先我们要知道怎样创建BFC。一个BFC可以被显式触发，只需满足以下条件之一：
 + float的值不为none；
-+ overflow的值不为visible；
++ overflow的值不为visible(默认)；
 + position的值为fixed / absolute；
 + display的值为table-cell / table-caption / inline-block / flex / inline-flex。
 
@@ -38,4 +39,3 @@ BFC（Block Formatting Context），块级格式化上下文，它规定了内�
 当给父级设置"overflow:hidden"时，实际上创建了一个超级属性BFC，此超级属性反过来决定了"height:auto"是如何计算的。在“BFC布局规则”中提到：计算BFC的高度时，浮动元素也参与计算。因此，父元素在计算其高度时，加入了浮动元素的高度，“顺便”达成了清除浮动的目标，所以父元素就包裹住了子元素。
 
 除了给.parent设置"overflow:hidden"，我们还可以设置"display:inline-block"、"position:absolute"、"float:left"等方式来创建一个BFC，从而达到包裹浮动子元素的效果（具体使用哪种方法要看项目需求）
-
